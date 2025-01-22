@@ -1,0 +1,132 @@
+<html>
+<head>
+	<title>MyWebsite | Project showcase</title>
+	<style>
+		body{
+			font-family: tahoma, sans-serif;
+			background-color: #8B5E83;
+			text-align: center;
+			color: floralwhite;
+		}
+		img{
+			width: 400px;
+			height: auto;
+			margin: 20px;
+			border: 5px solid #9370DB;
+			border-radius: 10px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+			cursor: pointer;
+			transition: transform 0.3s, box-shadow 0.3s;
+		}
+		h1{
+			font-size: 3rem;
+			margin: 20px;
+			animation: fadeIn 2s ease-in-out;
+		}
+
+		h2{
+			font-size: 1.8rem;
+			margin: 20px 0;
+			animation: slideIn 1.5s ease-in-out;
+		}
+
+		img:hover{
+			transform: scale(1.05);
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+		}
+
+		#audio-container{
+			margin: 20px auto;
+			text-align: center;
+			width: 60%;
+
+		}
+
+		audio{
+			width: 100%;
+			height: 30px;
+			border-radius: 5px;
+			border: 2px solid #9370DB;
+			background-color: transparent;
+			outline: none;
+			box-shadow: none;
+		}
+
+		audio:hover{
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+		}
+
+		#song-name{
+			font-size: 1.2rem;
+			color: white;
+			font-style: italic;
+			opacity: 0.6;
+			margin-bottom: 5px;
+		}
+
+		@keyframes fadeIn{
+			from{
+				opacity: 0;
+			}
+			to{
+				opacity: 1;
+			}
+		}
+
+		@keyframes slideIn{
+			from{
+				transform: translateY(-30px);
+				opacity: 0;
+			}
+			to{
+				transform: translateY(0);
+				opacity: 1;
+			}
+		}
+
+        footer{
+            margin-top: 30px;
+            font-size: 1.2rem;
+            font-style: italic;
+
+        }
+	</style>
+</head>
+<body>
+
+	<div id="audio-container">
+		<div id="song-name">Track: Ma L'amore no - Lelio Luttazzi
+		<audio autoplay loop controls>
+			<source src="moma.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+		</audio>
+	</div>
+	<h1>Project Gallery</h1>
+	<br>
+	<br>
+
+
+	<h2>Grading system implemented using Python</h2>
+	<a href="stats.rar" download="stats.rar">
+		<img src="Stats Project.jpg" alt="Grading system through python">
+	</a>
+
+	<br>
+	<br>
+
+	<h2>Food delivery system implemeneted using C++</h2>
+	<a href="dsa.zip" download="dsa.zip">
+		<img src="DSA Project.jpg" alt="Food delivery system through C++">
+	</a>
+
+	<h2>Hangman game using C++</h2>
+	<a href="Hangman.zip" download="Hangman.zip">
+		<img src="hangman.jpg" alt="Hangman game using C++">
+	</a>
+
+
+	<footer>
+		Hope you liked the jazz ;)
+	</footer>
+</body>
+</html>
