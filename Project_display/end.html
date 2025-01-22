@@ -1,132 +1,136 @@
 <html>
 <head>
-	<title>MyWebsite | Project showcase</title>
+	<title>MyWebsite | Project Showcase</title>
 	<style>
-		body{
+		body {
 			font-family: tahoma, sans-serif;
-			background-color: #8B5E83;
+			background: linear-gradient(to bottom, #8B5E83, #6A4B83);
 			text-align: center;
 			color: floralwhite;
 		}
-		img{
-			width: 400px;
-			height: auto;
+
+		html {
+			scroll-behavior: smooth;
+		}
+
+		.project-card {
+			display: inline-block;
+			width: 300px;
 			margin: 20px;
+			background-color: #6A4B83;
+			padding: 15px;
+			border-radius: 10px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+			transition: transform 0.3s;
+			text-align: center;
+		}
+
+		.project-card:hover {
+			transform: scale(1.05);
+		}
+
+		.project-card img {
+			width: 100%; /* Ensure images fit within card */
+			height: auto;
 			border: 5px solid #9370DB;
 			border-radius: 10px;
 			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 			cursor: pointer;
 			transition: transform 0.3s, box-shadow 0.3s;
 		}
-		h1{
-			font-size: 3rem;
-			margin: 20px;
-			animation: fadeIn 2s ease-in-out;
+
+		.project-card h2 {
+			font-size: 1.5rem;
+			color: bisque;
+			margin-bottom: 10px;
 		}
 
-		h2{
-			font-size: 1.8rem;
-			margin: 20px 0;
-			animation: slideIn 1.5s ease-in-out;
+		#instruction {
+			font-size: 1rem;
+			color: white;
+			font-style: italic;
+			opacity: 0.6;
+			margin-top: 10px;
 		}
 
-		img:hover{
-			transform: scale(1.05);
-			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-		}
-
-		#audio-container{
+		#audio-container {
 			margin: 20px auto;
 			text-align: center;
 			width: 60%;
-
 		}
 
-		audio{
+		audio {
 			width: 100%;
 			height: 30px;
 			border-radius: 5px;
 			border: 2px solid #9370DB;
-			background-color: transparent;
-			outline: none;
-			box-shadow: none;
 		}
 
-		audio:hover{
+		audio:hover {
 			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 		}
 
-		#song-name{
+		h1 {
+			font-size: 3rem;
+			margin: 20px;
+			color: bisque;
+			text-shadow: 0 4px 10px rgba(161, 144, 123, 1);
+		}
+
+		footer {
+			margin-top: 30px;
 			font-size: 1.2rem;
-			color: white;
 			font-style: italic;
-			opacity: 0.6;
-			margin-bottom: 5px;
 		}
-
-		@keyframes fadeIn{
-			from{
-				opacity: 0;
-			}
-			to{
-				opacity: 1;
-			}
-		}
-
-		@keyframes slideIn{
-			from{
-				transform: translateY(-30px);
-				opacity: 0;
-			}
-			to{
-				transform: translateY(0);
-				opacity: 1;
-			}
-		}
-
-        footer{
-            margin-top: 30px;
-            font-size: 1.2rem;
-            font-style: italic;
-
-        }
 	</style>
 </head>
 <body>
 
+	<div style="margin: 30px auto; width: 80%;">
+		<p>Welcome to Abdullah Waheed's Project Showcase!</p>
+		<p>I am a Computer Science student at GIK Institute (3rd semester). This page highlights some of my projects. Feel free to explore and download!</p>
+	</div>
+
 	<div id="audio-container">
-		<div id="song-name">Track: Ma L'amore no - Lelio Luttazzi
+		<div id="song-name">Track: Ma L'amore no - Lelio Luttazzi</div>
 		<audio autoplay loop controls>
 			<source src="moma.mp3" type="audio/mpeg">
-				Your browser does not support the audio element.
+			Your browser does not support the audio element.
 		</audio>
 	</div>
+
 	<h1>Project Gallery</h1>
-	<br>
-	<br>
 
+	<div class="project-card">
+		<h2>Grading System (Python)</h2>
+		<a href="stats.rar" download="stats.rar">
+			<img src="Stats Project.jpg" alt="Grading system through Python">
+		</a>
+		<p id="instruction">Click on the screenshot to download all contents of the project.</p>
+	</div>
 
-	<h2>Grading system implemented using Python</h2>
-	<a href="stats.rar" download="stats.rar">
-		<img src="Stats Project.jpg" alt="Grading system through python">
-	</a>
+	<div class="project-card">
+		<h2>Food Delivery System (C++)</h2>
+		<a href="dsa.zip" download="dsa.zip">
+			<img src="DSA Project.jpg" alt="Food delivery system through C++">
+		</a>
+		<p id="instruction">Click on the screenshot to download all contents of the project.</p>
+	</div>
 
-	<br>
-	<br>
+	<div class="project-card">
+		<h2>Hangman Game (C++)</h2>
+		<a href="Hangman.zip" download="Hangman.zip">
+			<img src="hangman.jpg" alt="Hangman game using C++">
+		</a>
+		<p id="instruction">Click on the screenshot to download all contents of the project.</p>
+	</div>
 
-	<h2>Food delivery system implemeneted using C++</h2>
-	<a href="dsa.zip" download="dsa.zip">
-		<img src="DSA Project.jpg" alt="Food delivery system through C++">
-	</a>
+	<footer style="background-color: #5D3A6D; padding: 20px; color: floralwhite; margin-top: 30px;">
+    <p>Hope you liked the jazz ;) | Connect with me on: 
+        <a href="https://github.com/abd-1211" target="_blank" style="color: #FFD700;">GitHub</a> | 
+        <a href="https://instagram.com/abdulla__waheed" target="_blank" style="color: #FFD700;">Instagram</a>
+    </p>
+</footer>
 
-	<h2>Hangman game using C++</h2>
-	<a href="Hangman.zip" download="Hangman.zip">
-		<img src="hangman.jpg" alt="Hangman game using C++">
-	</a>
-
-
-	<footer>
-		Hope you liked the jazz ;)
-	</footer>
 </body>
 </html>
